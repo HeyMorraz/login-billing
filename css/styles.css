@@ -11,10 +11,11 @@ body{
     height: 100vh;
 }
 .card{
+    position: relative;
     width: 290px;
     height: 290px;
     background: #1D203E;
-    color: #fff;;
+    color: #fff;
     box-sizing: border-box;
     padding: 20px 30px;
     border-radius: 10px;
@@ -42,12 +43,15 @@ body{
     font-size: 22px;
 
 }
-.card .card__input {
+.card__input {
     width: 100%;
     height: 25px;
     outline: none;
+    border: solid;
+    border-width: 0.1px;
     border-radius: 3px;
-    border: 10px;
+    
+    border-color: #EBEBEB;
     background: #3b3d535e;
     padding: 0 15px;
 } 
@@ -59,17 +63,44 @@ body{
 .card__contenedor {
     margin: 15px 0;
 }
+.card__contenedor-2{
+    position: relative;
+}
 
 #card__icon{
-   position: relative;
-   left: 200px;
-   top: 20px;
+   position: absolute;
+   left: 205px;
+   top: 28px;
     background: #3b3d535e;
     opacity: .4;
 }
 .card__iniciar{
     width: 100%;
-    background-color: #7758D1;
+    height: 25px;
+    background: linear-gradient(90deg,#F7CBFD 5% ,#7758D1 60%);
     color: blanchedalmond;
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px ;
 }
+a{
+    position: absolute;
+    display: block;
+    left: 50px;
+    padding: 10px;
+    text-decoration: none;
+    color:#fff;
+}
+/* @media (max-width:480px){
+    .card{
+        height: 100vh;
+        width: 100vh;
+    }
+}
+@media (max-width:760px){
+    .card{
+        height: 500px;
+        width: 500px;
+    }
+} */
