@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>login</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="card__title">Iniciar Sesión</h1>
+      <form class="card__form">
+        <div class="card__contenedor">
+          <!-- username -->
+          <label
+            class="card__label card__username"
+            for="Ingrese nombre de usuario"
+            >Nombre:</label
+          >
+          <input
+            class="card__input card__input-username"
+            type="text"
+            placeholder="Ingrese nombre de usuario"
+          />
+        </div>
+
+        <div class="card__contenedor card__contenedor-2">
+          <label class="card__label card__password" for="Ingrese contraseña"
+            >Contraseña:</label
+          >
+          <i class="fa fa-eye" id="card__icon"></i>
+          <input
+            class="card__input card__input-password"
+            type="password"
+            placeholder="Ingrese contraseña"
+          />
+        </div>
+
+        <input
+          class="card__start"
+          type="submit"
+          value="Iniciar Sesión"
+          placeholder="Iniciar Sesión"
+        />
+        <a class="card__text" href="#">¿Olvidaste tu contraseña?</a>
+      </form>
+    </div>
+  </body>
+</html>
